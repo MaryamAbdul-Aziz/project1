@@ -4,6 +4,4 @@ title: About Me
 permalink: /about/
 ---
 
-A Fastpages clone, for CSA - Tirth Thakkar & Haseeb Beg
-
-
+A modified blog for CSA Based on Fastpages- Tirth Thakkar & Haseeb Beg   

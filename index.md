@@ -2,8 +2,6 @@
 layout: home
 search_exclude: true
 ---
-A modified blog for CSA Based on Fastpages- Tirth Thakkar & Haseeb Beg   
+Vrnda and Maryam
 
-
-
-# Posts
+# Welcome to our group repo!
