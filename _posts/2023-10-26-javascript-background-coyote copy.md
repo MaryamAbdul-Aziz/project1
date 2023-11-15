@@ -36,14 +36,14 @@ over:
 </div>
 
 <script type="module">
-    import GameEnv from '{{site.baseurl}}/assets/js/alienWorld/GameEnv.js';
-    import GameObject from '{{site.baseurl}}/assets/js/alienWorld/GameObject.js';
-    import Background from '{{site.baseurl}}/assets/js/alienWorld/Background.js';
-    import Character from '{{site.baseurl}}/assets/js/alienWorld/Character.js';
-    import { initChicken } from '{{site.baseurl}}/assets/js/alienWorld/CharacterChicken.js';
-    import { initCoyote } from '{{site.baseurl}}/assets/js/alienWorld/CharacterCoyote2.js';
-    import { initMonkey } from '{{site.baseurl}}/assets/js/alienWorld/CharacterMonkey.js';
-    import { increaseScore, updateScore } from '{{site.baseurl}}/assets/js/alienWorld/Scoring.js';
+    import GameEnv from '{{site.baseurl}}/assets/js/game/GameEnv.js';
+    import GameObject from '{{site.baseurl}}/assets/js/game/GameObject.js';
+    import Background from '{{site.baseurl}}/assets/js/game/Background.js';
+    import Character from '{{site.baseurl}}/assets/js/game/Character.js';
+    import { initChicken } from '{{site.baseurl}}/assets/js/game/CharacterChicken.js';
+    import { initCoyote } from '{{site.baseurl}}/assets/js/game/CharacterCoyote2.js';
+    import { initMonkey } from '{{site.baseurl}}/assets/js/game/CharacterMonkey.js';
+    import { increaseScore, updateScore } from '{{site.baseurl}}/assets/js/game/Scoring.js';
 
     // Create a function to load an image and return a Promise
     async function loadImage(src) {
