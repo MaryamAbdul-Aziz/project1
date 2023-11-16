@@ -2,6 +2,8 @@
 title: 2.1 Binary
 layout: default
 description: A Binary Math illustrative application using HTML, Liquid, and JavaScript.
+on: /images/bulb_on.png
+off: /images/bulb_off.png
 type: hacks
 courses: { compsci: {week: 15} }
 ---
@@ -20,6 +22,8 @@ Hack 4: change to 24 bits and add a color code and display color when 24 bits. T
 Jekyll Table Reference: https://idratherbewriting.com/documentation-theme-jekyll/mydoc_tables.html
 
 --->
+{% assign lightOn = site.baseurl | append: page.images.on %}
+{% assign lightOff = site.baseurl | append: page.images.off %}
 
 {% assign BITS = 8 %}
 
@@ -53,17 +57,13 @@ Jekyll Table Reference: https://idratherbewriting.com/documentation-theme-jekyll
     </tbody>
 </table>
 
-{% comment %}
-Liquid for loop includes last number, thus the Minus
-{% endcomment %}
+<!--Liquid for loop includes last number, thus the Minus-->
 {% assign bits = BITS | minus: 1 %} 
 
 <table>
     <thead>
         <tr>
-            {% comment %}
-            Build many bits
-            {% endcomment %}
+            <!--Build many bits-->
             {% for i in (0..bits) %}
             <th><img id="bulb{{ i }}" src="{{site.baseurl}}/images/bulb_off.png" alt="" width="40" height="Auto">
                 <div class="button" id="butt{{ i }}" onclick="javascript:toggleBit({{ i }})">Turn on</div>
@@ -73,9 +73,7 @@ Liquid for loop includes last number, thus the Minus
     </thead>
     <tbody>
         <tr>
-            {% comment %}
-            Value of bit
-            {% endcomment %}
+            <!--Value of bit-->
             {% for i in (0..bits) %}
             <td><input type='text' id="digit{{ i }}" Value="0" size="1" readonly></td>
             {% endfor %}
@@ -87,7 +85,7 @@ Liquid for loop includes last number, thus the Minus
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
-    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.gif";
+    const IMAGE_ON = "{{site.baseurl}}/images/bulb_on.png";
     const MSG_OFF = "Turn off";
     const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
 
